@@ -1,0 +1,468 @@
+[
+  {
+    "city": "Warszawa / Raszyn",
+    "name": "Warsaw Plaza Hotel",
+    "type": "hotel",
+    "url": "https://warsawplazahotel.pl/",
+    "folder": "assets/web_images/warszawa-raszyn/warsaw-plaza-hotel",
+    "images": [
+      {
+        "file": "assets/web_images/warszawa-raszyn/warsaw-plaza-hotel/04.jpg",
+        "source_url": "https://www.warsawplazahotel.pl/wp-content/uploads/2022/03/dayfront-1.jpg",
+        "bytes": 299306
+      },
+      {
+        "file": "assets/web_images/warszawa-raszyn/warsaw-plaza-hotel/06.jpg",
+        "source_url": "https://www.warsawplazahotel.pl/wp-content/uploads/2022/03/xdayfront-1-1024x576.jpg.pagespeed.ic.XmPZ0uB9VX.jpg",
+        "bytes": 70583
+      },
+      {
+        "file": "assets/web_images/warszawa-raszyn/warsaw-plaza-hotel/07.jpg",
+        "source_url": "https://www.warsawplazahotel.pl/wp-content/uploads/2022/03/xdayfront-1-768x432.jpg.pagespeed.ic.htN9cjgcoo.jpg",
+        "bytes": 42278
+      },
+      {
+        "file": "assets/web_images/warszawa-raszyn/warsaw-plaza-hotel/08.jpg",
+        "source_url": "https://www.warsawplazahotel.pl/wp-content/uploads/2022/03/dayfront-1-1536x864.jpg",
+        "bytes": 143179
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Warszawa / Raszyn",
+    "name": "Falenty Biznes i Wypoczynek",
+    "type": "hotel/event",
+    "url": "https://falenty.com.pl/",
+    "folder": "assets/web_images/warszawa-raszyn/falenty-biznes-i-wypoczynek",
+    "images": [
+      {
+        "file": "assets/web_images/warszawa-raszyn/falenty-biznes-i-wypoczynek/05.jpg",
+        "source_url": "https://falenty.com.pl/wp-content/uploads/2023/01/shutterstock_1749740747-450x1050.jpg",
+        "bytes": 78852
+      },
+      {
+        "file": "assets/web_images/warszawa-raszyn/falenty-biznes-i-wypoczynek/06.jpg",
+        "source_url": "https://falenty.com.pl/wp-content/uploads/2022/07/HB-1-450x1050.jpg",
+        "bytes": 45295
+      },
+      {
+        "file": "assets/web_images/warszawa-raszyn/falenty-biznes-i-wypoczynek/07.jpg",
+        "source_url": "https://falenty.com.pl/wp-content/uploads/2020/03/cbm1-450x1050.jpg",
+        "bytes": 80003
+      },
+      {
+        "file": "assets/web_images/warszawa-raszyn/falenty-biznes-i-wypoczynek/08.jpg",
+        "source_url": "https://falenty.com.pl/wp-content/uploads/2023/01/shutterstock_2135299657_small-450x1050.jpg",
+        "bytes": 64168
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Krakow",
+    "name": "Premier Krakow Hotel",
+    "type": "hotel",
+    "url": "https://premierkrakowhotel.pl/",
+    "folder": "assets/web_images/krakow/premier-krakow-hotel",
+    "images": [
+      {
+        "file": "assets/web_images/krakow/premier-krakow-hotel/02.jpg",
+        "source_url": "https://www.premierkrakowhotel.pl/wp-content/uploads/2024/08/premier-krakow-hotel.jpg",
+        "bytes": 275414
+      },
+      {
+        "file": "assets/web_images/krakow/premier-krakow-hotel/03.jpg",
+        "source_url": "https://www.premierkrakowhotel.pl/wp-content/uploads/2024/08/premier-krakow-hotel-300x200.jpg",
+        "bytes": 33534
+      },
+      {
+        "file": "assets/web_images/krakow/premier-krakow-hotel/04.jpg",
+        "source_url": "https://www.premierkrakowhotel.pl/wp-content/uploads/2024/08/premier-krakow-hotel-1024x682.jpg",
+        "bytes": 145202
+      },
+      {
+        "file": "assets/web_images/krakow/premier-krakow-hotel/05.jpg",
+        "source_url": "https://www.premierkrakowhotel.pl/wp-content/uploads/2024/08/premier-krakow-hotel-768x511.jpg",
+        "bytes": 94785
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Krakow",
+    "name": "Express Krakow Hotel",
+    "type": "hotel",
+    "url": "https://expresskrakowhotel.pl/",
+    "folder": "assets/web_images/krakow/express-krakow-hotel",
+    "images": [
+      {
+        "file": "assets/web_images/krakow/express-krakow-hotel/02.jpg",
+        "source_url": "https://www.expresskrakowhotel.pl/wp-content/uploads/2025/12/budynek-ekh.jpg",
+        "bytes": 232838
+      },
+      {
+        "file": "assets/web_images/krakow/express-krakow-hotel/03.jpg",
+        "source_url": "https://www.expresskrakowhotel.pl/wp-content/uploads/2025/12/budynek-ekh-300x200.jpg",
+        "bytes": 99732
+      },
+      {
+        "file": "assets/web_images/krakow/express-krakow-hotel/04.jpg",
+        "source_url": "https://www.expresskrakowhotel.pl/wp-content/uploads/2025/12/budynek-ekh-1024x682.jpg",
+        "bytes": 742785
+      },
+      {
+        "file": "assets/web_images/krakow/express-krakow-hotel/05.jpg",
+        "source_url": "https://www.expresskrakowhotel.pl/wp-content/uploads/2025/12/budynek-ekh-768x512.jpg",
+        "bytes": 469689
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Lodz",
+    "name": "Citi Hotel's Lodz",
+    "type": "hotel/event",
+    "url": "https://lodz.citihotels.pl/",
+    "folder": "assets/web_images/lodz/citi-hotel-s-lodz",
+    "images": [
+      {
+        "file": "assets/web_images/lodz/citi-hotel-s-lodz/02.jpg",
+        "source_url": "https://lodz.citihotels.pl/wp-content/uploads/2023/02/1.jpg",
+        "bytes": 462958
+      },
+      {
+        "file": "assets/web_images/lodz/citi-hotel-s-lodz/03.jpg",
+        "source_url": "https://lodz.citihotels.pl/wp-content/uploads/2023/02/1-300x200.jpg",
+        "bytes": 27736
+      },
+      {
+        "file": "assets/web_images/lodz/citi-hotel-s-lodz/04.jpg",
+        "source_url": "https://lodz.citihotels.pl/wp-content/uploads/2023/02/1-1024x682.jpg",
+        "bytes": 161068
+      },
+      {
+        "file": "assets/web_images/lodz/citi-hotel-s-lodz/05.jpg",
+        "source_url": "https://lodz.citihotels.pl/wp-content/uploads/2023/02/1-768x512.jpg",
+        "bytes": 99996
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Lodz",
+    "name": "Tektura by Farina Bianco",
+    "type": "event space",
+    "url": "https://www.tekturalodz.pl/",
+    "folder": "assets/web_images/lodz/tektura-by-farina-bianco",
+    "images": [
+      {
+        "file": "assets/web_images/lodz/tektura-by-farina-bianco/02.jpg",
+        "source_url": "https://www.tekturalodz.pl/wp-content/uploads/elementor/thumbs/tk1-rm25w1ey85vf51pmgbvyrblpci9fyb2xsz8wv9xpx2.jpg",
+        "bytes": 238138
+      },
+      {
+        "file": "assets/web_images/lodz/tektura-by-farina-bianco/03.png",
+        "source_url": "https://www.tekturalodz.pl/wp-content/uploads/2026/03/sygnet-tlo.png",
+        "bytes": 86917
+      },
+      {
+        "file": "assets/web_images/lodz/tektura-by-farina-bianco/04.png",
+        "source_url": "https://www.tekturalodz.pl/wp-content/uploads/2026/03/sygnet-tlo-196x300.png",
+        "bytes": 15333
+      },
+      {
+        "file": "assets/web_images/lodz/tektura-by-farina-bianco/05.png",
+        "source_url": "https://www.tekturalodz.pl/wp-content/uploads/2026/03/sygnet-tlo-669x1024.png",
+        "bytes": 65687
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Lodz",
+    "name": "Farina Bianco",
+    "type": "restaurant/event",
+    "url": "https://farinabianco.com/eventy/",
+    "folder": "assets/web_images/lodz/farina-bianco",
+    "images": [
+      {
+        "file": "assets/web_images/lodz/farina-bianco/01.jpg",
+        "source_url": "https://farinabianco.com/wp-content/uploads/2022/12/dscf2911.jpg",
+        "bytes": 209124
+      },
+      {
+        "file": "assets/web_images/lodz/farina-bianco/02.png",
+        "source_url": "https://farinabianco.com/wp-content/uploads/2016/12/farina_bianco__bez-tea-kopia.png",
+        "bytes": 39274
+      },
+      {
+        "file": "assets/web_images/lodz/farina-bianco/03.png",
+        "source_url": "https://farinabianco.com/wp-content/uploads/2016/11/farina_bianco__bez-tea-e1478082269561.png",
+        "bytes": 39611
+      },
+      {
+        "file": "assets/web_images/lodz/farina-bianco/04.jpg",
+        "source_url": "https://farinabianco.com/wp-content/uploads/2022/12/dscf2911-2048x1365.jpg",
+        "bytes": 209694
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Lodz",
+    "name": "Gesi Puch",
+    "type": "restaurant/event",
+    "url": "https://gesipuch.pl/onas/",
+    "folder": "assets/web_images/lodz/gesi-puch",
+    "images": [
+      {
+        "file": "assets/web_images/lodz/gesi-puch/01.jpg",
+        "source_url": "https://gesipuch.pl/wp-content/uploads/2023/02/old_richter.jpg",
+        "bytes": 32878
+      },
+      {
+        "file": "assets/web_images/lodz/gesi-puch/02.png",
+        "source_url": "https://gesipuch.pl/wp-content/uploads/2023/03/output-onlinepngtools-4.png",
+        "bytes": 277068
+      },
+      {
+        "file": "assets/web_images/lodz/gesi-puch/08.jpg",
+        "source_url": "https://gesipuch.pl/wp-content/uploads/2023/02/750_1428-1024x684.jpg",
+        "bytes": 119101
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Lodz",
+    "name": "TABU Sushi",
+    "type": "restaurant/private dining",
+    "url": "https://tabusushi.eu/",
+    "folder": "assets/web_images/lodz/tabu-sushi",
+    "images": [
+      {
+        "file": "assets/web_images/lodz/tabu-sushi/01.png",
+        "source_url": "https://tabusushi.eu/wp-content/uploads/2023/07/tabu.png",
+        "bytes": 26042
+      },
+      {
+        "file": "assets/web_images/lodz/tabu-sushi/02.png",
+        "source_url": "https://tabusushi.eu/wp-content/uploads/2025/04/erica-m3-bg1-a.png",
+        "bytes": 562902
+      },
+      {
+        "file": "assets/web_images/lodz/tabu-sushi/04.jpg",
+        "source_url": "https://tabusushi.eu/wp-content/uploads/2026/05/750_2343-800x800.jpg",
+        "bytes": 90749
+      },
+      {
+        "file": "assets/web_images/lodz/tabu-sushi/07.png",
+        "source_url": "https://tabusushi.eu/wp-content/uploads/2026/05/tea.png",
+        "bytes": 990987
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Lodz",
+    "name": "Rozlam",
+    "type": "restaurant/after-event",
+    "url": "https://rozlam.pl/",
+    "folder": "assets/web_images/lodz/rozlam",
+    "images": [
+      {
+        "file": "assets/web_images/lodz/rozlam/01.png",
+        "source_url": "https://rozlam.pl/wp-content/uploads/2025/07/117.png",
+        "bytes": 408663
+      },
+      {
+        "file": "assets/web_images/lodz/rozlam/02.png",
+        "source_url": "https://rozlam.pl/wp-content/uploads/2025/07/120.png",
+        "bytes": 509490
+      },
+      {
+        "file": "assets/web_images/lodz/rozlam/03.png",
+        "source_url": "https://rozlam.pl/wp-content/uploads/2025/07/119.png",
+        "bytes": 517301
+      },
+      {
+        "file": "assets/web_images/lodz/rozlam/04.png",
+        "source_url": "https://rozlam.pl/wp-content/uploads/2025/07/118.png",
+        "bytes": 426954
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Lodz",
+    "name": "Boutique Hotel's Lodz",
+    "type": "hotel",
+    "url": "https://www.hotels24.com.pl/",
+    "folder": "assets/web_images/lodz/boutique-hotel-s-lodz",
+    "images": [
+      {
+        "file": "assets/web_images/lodz/boutique-hotel-s-lodz/01.jpg",
+        "source_url": "https://u.profitroom.pl/2017.hotels24.com.pl/thumb/1200x630/uploads/Fotolia_117368575_Subscription_Monthly_M.jpg",
+        "bytes": 123285
+      },
+      {
+        "file": "assets/web_images/lodz/boutique-hotel-s-lodz/04.jpg",
+        "source_url": "https://u.profitroom.pl/2017.hotels24.com.pl/thumb/220x210/uploads/Boutique_Lodz_Pilsudskiego/zmnPisudskiego.jpg",
+        "bytes": 15628
+      },
+      {
+        "file": "assets/web_images/lodz/boutique-hotel-s-lodz/08.jpg",
+        "source_url": "https://u.profitroom.pl/2017.hotels24.com.pl/thumb/220x210/uploads/Boutique_Hostel_Lodz/zmnStefanowskiego.jpg",
+        "bytes": 15813
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Poznan",
+    "name": "Grand Royal Hotel",
+    "type": "hotel",
+    "url": "https://grandroyalhotel.pl/",
+    "folder": "assets/web_images/poznan/grand-royal-hotel",
+    "images": [
+      {
+        "file": "assets/web_images/poznan/grand-royal-hotel/01.jpg",
+        "source_url": "https://u.profitroom.pl/2016.grandroyalhotel.pl/thumb/1200x630/uploads/Gwna-przyciemnione.jpg",
+        "bytes": 96276
+      },
+      {
+        "file": "assets/web_images/poznan/grand-royal-hotel/02.jpg",
+        "source_url": "https://u.profitroom.pl/2016.grandroyalhotel.pl/thumb/1600x900/uploads/DSC_1038.jpg",
+        "bytes": 334287
+      },
+      {
+        "file": "assets/web_images/poznan/grand-royal-hotel/03.jpg",
+        "source_url": "https://www.grandroyalhotel.pl/uploads/Cms_offers/cms_offer_2_1.jpg",
+        "bytes": 90514
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Kazimierz Dolny",
+    "name": "Krol Kazimierz Hotel & SPA",
+    "type": "hotel/destination",
+    "url": "https://www.krolkazimierz.pl/",
+    "folder": "assets/web_images/kazimierz-dolny/krol-kazimierz-hotel-spa",
+    "images": [
+      {
+        "file": "assets/web_images/kazimierz-dolny/krol-kazimierz-hotel-spa/01.jpg",
+        "source_url": "https://u.profitroom.pl/2016.krolkazimierz.pl/thumb/1200x630/uploads/750_0338_HDR.jpg",
+        "bytes": 224538
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Mazury / Worliny",
+    "name": "Masuria Hotel & SPA",
+    "type": "hotel/destination",
+    "url": "https://www.hotelmasuria.pl/",
+    "folder": "assets/web_images/mazury-worliny/masuria-hotel-spa",
+    "images": [
+      {
+        "file": "assets/web_images/mazury-worliny/masuria-hotel-spa/01.jpg",
+        "source_url": "https://u.profitroom.pl/2017.masuria.com.pl/thumb/1200x630/uploads/Masuria_dobre.JPG",
+        "bytes": 162429
+      },
+      {
+        "file": "assets/web_images/mazury-worliny/masuria-hotel-spa/02.jpg",
+        "source_url": "https://u.profitroom.pl/2017.masuria.com.pl/thumb/1920x980/uploads/Fotolia_147925422_Subscription_Monthly_M.jpg",
+        "bytes": 329022
+      },
+      {
+        "file": "assets/web_images/mazury-worliny/masuria-hotel-spa/03.jpg",
+        "source_url": "https://u.profitroom.pl/2017.masuria.com.pl/thumb/1920x980/uploads/Fotolia_67940264_Subscription_Monthly_M_1.jpg",
+        "bytes": 488294
+      },
+      {
+        "file": "assets/web_images/mazury-worliny/masuria-hotel-spa/04.jpg",
+        "source_url": "https://u.profitroom.pl/2017.masuria.com.pl/thumb/1920x980/uploads/zmnWPA2624.jpg",
+        "bytes": 323026
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Wroclaw",
+    "name": "Citi Hotel's Wroclaw",
+    "type": "hotel",
+    "url": "https://wroclaw.citihotels.pl/",
+    "folder": "assets/web_images/wroclaw/citi-hotel-s-wroclaw",
+    "images": [
+      {
+        "file": "assets/web_images/wroclaw/citi-hotel-s-wroclaw/02.jpg",
+        "source_url": "https://wroclaw.citihotels.pl/wp-content/uploads/2022/10/citi_hotel_wroclaw_2-copy.jpg",
+        "bytes": 252118
+      },
+      {
+        "file": "assets/web_images/wroclaw/citi-hotel-s-wroclaw/03.jpg",
+        "source_url": "https://wroclaw.citihotels.pl/wp-content/uploads/2022/10/citi_hotel_wroclaw_2-copy-300x200.jpg",
+        "bytes": 24565
+      },
+      {
+        "file": "assets/web_images/wroclaw/citi-hotel-s-wroclaw/04.jpg",
+        "source_url": "https://wroclaw.citihotels.pl/wp-content/uploads/2022/10/citi_hotel_wroclaw_2-copy-1024x682.jpg",
+        "bytes": 82757
+      },
+      {
+        "file": "assets/web_images/wroclaw/citi-hotel-s-wroclaw/05.jpg",
+        "source_url": "https://wroclaw.citihotels.pl/wp-content/uploads/2022/10/citi_hotel_wroclaw_2-copy-768x512.jpg",
+        "bytes": 55646
+      }
+    ],
+    "status": "ok",
+    "error": null
+  },
+  {
+    "city": "Sosnowiec",
+    "name": "Art Hotel's Sosnowiec",
+    "type": "hotel",
+    "url": "https://www.cfihotels.pl/",
+    "folder": "assets/web_images/sosnowiec/art-hotel-s-sosnowiec",
+    "images": [
+      {
+        "file": "assets/web_images/sosnowiec/art-hotel-s-sosnowiec/01.jpg",
+        "source_url": "https://cfihotels.pl/wp-content/uploads/2025/09/1.jpg",
+        "bytes": 429612
+      },
+      {
+        "file": "assets/web_images/sosnowiec/art-hotel-s-sosnowiec/02.jpg",
+        "source_url": "https://cfihotels.pl/wp-content/uploads/2025/09/2.jpg",
+        "bytes": 348376
+      },
+      {
+        "file": "assets/web_images/sosnowiec/art-hotel-s-sosnowiec/03.jpg",
+        "source_url": "https://cfihotels.pl/wp-content/uploads/2025/09/3.jpg",
+        "bytes": 270645
+      },
+      {
+        "file": "assets/web_images/sosnowiec/art-hotel-s-sosnowiec/04.jpg",
+        "source_url": "https://cfihotels.pl/wp-content/uploads/2025/09/4.jpg",
+        "bytes": 212219
+      }
+    ],
+    "status": "ok",
+    "error": null
+  }
+]

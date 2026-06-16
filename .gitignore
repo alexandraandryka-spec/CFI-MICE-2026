@@ -10,9 +10,9 @@ Desktop.ini
 *.log
 *.tmp
 *.temp
+work/
 
 # Environment
 .env
 .env.*
 !.env.example
-

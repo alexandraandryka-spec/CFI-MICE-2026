@@ -155,14 +155,14 @@ def build_tektura_collage() -> None:
 
 def build_tektura_footer_collage() -> None:
     gap = 10
-    collage_w = W - 152
+    collage_w = W
     collage_h = 540
     canvas = Image.new("RGB", (collage_w, collage_h), CHOCOLATE)
 
     paths = [
+        "tektura-footer-bar.jpg",
         "tektura-footer-table.jpg",
         "tektura-footer-patio.jpg",
-        "tektura-footer-bar.jpg",
     ]
     images = [Image.open(ASSETS / path).convert("RGB") for path in paths]
     available_w = collage_w - gap * (len(images) - 1)
@@ -221,11 +221,15 @@ def render() -> Image.Image:
     canvas.paste(overlay, (0, y), overlay)
     draw = ImageDraw.Draw(canvas)
     draw.line((W // 2, y, W // 2, y + hero_h), fill="#b8aea2", width=2)
+    title_y = y + 840
+    draw.text((70, title_y), "Od Scheiblera", font=F["serif_82"], fill=WHITE)
+    draw.text((770, title_y), "do", font=F["serif_82"], fill=WHITE)
+    draw.text((866, title_y + 2), "POLMO", font=F["serif_italic_112"], fill=COPPER_LIGHT)
     hero_eyebrow = "DWIE NOWE PRZESTRZENIE EVENTOWE W ŁODZI"
     hero_spacing = 6
     hero_font = F["sans_bold_28"]
     hero_text_w = sum(text_width(draw, c, hero_font) + hero_spacing for c in hero_eyebrow)
-    hero_box = (76, y + 680, 76 + hero_text_w + 64, y + 756)
+    hero_box = (76, y + 1014, 76 + hero_text_w + 64, y + 1090)
     hero_label_bg = Image.new("RGBA", (W, hero_h), (0, 0, 0, 0))
     hero_label_draw = ImageDraw.Draw(hero_label_bg)
     hero_label_draw.rounded_rectangle(
@@ -237,12 +241,7 @@ def render() -> Image.Image:
     )
     canvas.paste(hero_label_bg, (0, y), hero_label_bg)
     draw = ImageDraw.Draw(canvas)
-    letterspaced(draw, (108, y + 704), hero_eyebrow, hero_font, COPPER_LIGHT, hero_spacing)
-    title_y = y + 840
-    draw.text((70, title_y), "Od Scheiblera", font=F["serif_82"], fill=WHITE)
-    draw.text((770, title_y), "do", font=F["serif_82"], fill=WHITE)
-    draw.text((866, title_y + 2), "POLMO", font=F["serif_italic_112"], fill=COPPER_LIGHT)
-    draw.text((98, y + 1040), "Dwie wyjątkowe przestrzenie eventowe na mapie Łodzi.", font=F["sans_28"], fill=MUTED_WHITE)
+    letterspaced(draw, (108, y + 1038), hero_eyebrow, hero_font, COPPER_LIGHT, hero_spacing)
     y += hero_h
 
     # Intro
@@ -535,7 +534,7 @@ def render() -> Image.Image:
     y += scheibler_h + 90
 
     footer_collage = Image.open(ASSETS / "tektura-footer-collage.jpg").convert("RGB")
-    canvas.paste(footer_collage, (76, y))
+    canvas.paste(footer_collage, (0, y))
     y += footer_collage.height + 90
 
     # Footer

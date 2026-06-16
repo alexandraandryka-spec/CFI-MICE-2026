@@ -111,7 +111,8 @@
     .hero-copy { width: 100%; padding: 0 48px 54px; }
     .hero .eyebrow {
       display: inline-block;
-      margin-bottom: 22px;
+      margin-top: 28px;
+      margin-bottom: 0;
       padding: 12px 18px 11px;
       color: var(--copper-light);
       font-size: 14px;
@@ -134,13 +135,6 @@
     h1 .scheibler { text-align: left; white-space: nowrap; }
     h1 .polmo { text-align: left; white-space: nowrap; }
     h1 em { color: var(--copper-light); font-style: italic; }
-    .hero-subtitle {
-      margin: 24px 0 0;
-      max-width: 510px;
-      font-size: 18px;
-      line-height: 1.45;
-      color: rgba(255,255,255,.86);
-    }
 
     .intro {
       display: grid;
@@ -336,9 +330,11 @@
     .tektura-key-amenity::before { content: ""; position: absolute; left: 2px; top: .48em; width: 5px; height: 5px; border-radius: 50%; background: var(--copper); }
     .tektura-footer-collage {
       display: block;
-      width: 100%;
+      width: calc(100% + 96px);
       height: auto;
       margin-top: 58px;
+      margin-left: -48px;
+      margin-right: -48px;
     }
 
     .arrangements { margin-top: 42px; padding-top: 25px; border-top: 1px solid rgba(23,22,18,.18); }
@@ -454,7 +450,12 @@
       .history-dates { grid-template-columns: 1fr; }
       .tektura-key-values, .tektura-key-amenities { grid-template-columns: 1fr 1fr; }
       .tektura-key-value:nth-child(3) { border-left: 0; }
-      .tektura-footer-collage { height: auto; }
+      .tektura-footer-collage {
+        width: calc(100% + 52px);
+        height: auto;
+        margin-left: -26px;
+        margin-right: -26px;
+      }
       .arrangements-heading { display: block; }
       .arrangements-note { margin-top: 12px; text-align: left; }
       .arrangement-grid { grid-template-columns: 1fr; }
@@ -489,12 +490,11 @@
       </div>
       <div class="hero-rule"></div>
       <div class="hero-copy">
-        <div class="eyebrow">Dwie nowe przestrzenie eventowe w Łodzi</div>
         <h1 class="serif">
           <span class="scheibler">Od Scheiblera</span>
           <span class="polmo">do <em>POLMO</em></span>
         </h1>
-        <p class="hero-subtitle">Dwie wyjątkowe przestrzenie eventowe na mapie Łodzi.</p>
+        <div class="eyebrow">Dwie nowe przestrzenie eventowe w Łodzi</div>
       </div>
     </section>
 

@@ -34,6 +34,7 @@ F = {
     "sans_22": font("arial.ttf", 22),
     "sans_24": font("arial.ttf", 24),
     "sans_28": font("arial.ttf", 28),
+    "sans_bold_13": font("arialbd.ttf", 13),
     "sans_bold_20": font("arialbd.ttf", 20),
     "sans_bold_24": font("arialbd.ttf", 24),
     "sans_bold_28": font("arialbd.ttf", 28),
@@ -208,7 +209,7 @@ def render() -> Image.Image:
 
     # Hero
     hero_h = 1160
-    left = cover(ASSETS / "tektura-exterior.jpg", (W // 2, hero_h), (0.50, 0.48))
+    left = cover(ASSETS / "tektura-hero-window.jpg", (W // 2, hero_h), (0.50, 0.50))
     right = cover(ASSETS / "99hz-hero-banquet-crop.jpg", (W // 2, hero_h), (0.50, 0.52))
     canvas.paste(left, (0, y))
     canvas.paste(right, (W // 2, y))
@@ -319,8 +320,8 @@ def render() -> Image.Image:
     draw.line((96, y, W - 96, y), fill="#a99e90", width=2)
     hz_capacities = [
         ("145 m²", "POWIERZCHNIA SALI"),
-        ("DO 120", "OSÓB BANKIETOWO PRZY STOŁACH PROSTOKĄTNYCH"),
-        ("DO 80", "OSÓB PRZY ELEGANCKICH STOŁACH OKRĄGŁYCH"),
+        ("DO 120", "OSÓB PRZY STOŁACH PROSTOKĄTNYCH"),
+        ("DO 80", "OSÓB PRZY STOŁACH OKRĄGŁYCH"),
         ("DO 150", "OSÓB W FORMULE KOKTAJLOWEJ (STANDING PARTY)"),
     ]
     capacity_w = (W - 192) // 4
@@ -338,41 +339,6 @@ def render() -> Image.Image:
             cy += 29
     draw.line((96, y + 260, W - 96, y + 260), fill="#a99e90", width=2)
     y += 330
-
-    # 99Hz arrangements
-    letterspaced(draw, (96, y), "ELASTYCZNA PRZESTRZEŃ", F["sans_bold_20"], COPPER, 4)
-    draw.text((96, y + 43), "Trzy przykładowe możliwości aranżacji sali 99Hz", font=F["serif_38"], fill=INK)
-    note = "Liczby miejsc wynikają z przedstawionych rzutów i mogą być dostosowane do charakteru wydarzenia."
-    draw_wrapped(draw, note, (975, y + 8), F["sans_20"], 360, "#766e64", 29)
-    y += 112
-    arrangement_cards = [
-        ("99hz-classroom-plan.jpg", "Układ szkolny", "48", "MIEJSC PRZY STOŁACH"),
-        ("99hz-horseshoe-plan.jpg", "Podkowa", "48", "MIEJSC KONFERENCYJNYCH"),
-        ("99hz-banquet-plan.jpg", "Bankietowy", "80", "MIEJSC PRZY OKRĄGŁYCH STOŁACH"),
-    ]
-    card_gap = 22
-    card_w = (W - 192 - card_gap * 2) // 3
-    card_h = 330
-    for idx, (asset, title, capacity, label) in enumerate(arrangement_cards):
-        cx = 96 + idx * (card_w + card_gap)
-        draw.line((cx, y, cx + card_w, y), fill=COPPER_LIGHT, width=4)
-        plan_source = Image.open(ASSETS / asset).convert("RGB")
-        plan = ImageOps.fit(
-            plan_source,
-            (card_w, 235),
-            method=Image.Resampling.LANCZOS,
-            bleed=0.08,
-            centering=(0.5, 0.5),
-        )
-        canvas.paste(plan, (cx, y + 12))
-        title_w = text_width(draw, title, F["serif_28"])
-        capacity_w = text_width(draw, capacity, F["serif_28"])
-        group_w = title_w + 16 + capacity_w
-        title_x = cx + (card_w - group_w) / 2
-        draw.text((title_x, y + 261), title, font=F["serif_28"], fill=INK)
-        capacity_x = title_x + title_w + 16
-        draw.text((capacity_x, y + 261), capacity, font=F["serif_28"], fill=COPPER)
-    y += card_h + 70
 
     # Historical POLMO card
     history_h = 670
@@ -402,7 +368,7 @@ def render() -> Image.Image:
         draw.line((ix, iy, ix + 294, iy), fill="#69635c", width=2)
         draw.text((ix, iy + 15), date, font=F["serif_38"], fill=COPPER_LIGHT)
         draw_wrapped(draw, label, (ix, iy + 64), F["sans_20"], 294, MUTED_WHITE, 28)
-    letterspaced(draw, (hx, y + 624), "ARCHIWALNA HALA MONTAŻU · INFORMATOR FOS „POLMO”, 1978", F["sans_bold_20"], "#77716a", 2)
+    letterspaced(draw, (hx, y + 632), "ARCHIWALNA HALA MONTAŻU · INFORMATOR FOS „POLMO”, 1978", F["sans_bold_13"], "#77716a", 1)
     y += history_h + 90
 
     draw.line((96, y, W - 96, y), fill="#a99e90", width=2)
@@ -461,8 +427,8 @@ def render() -> Image.Image:
     key_values = [
         ("600 m²", "POWIERZCHNIA PRZESTRZENI"),
         ("OD 40", "OSÓB · IMPREZY ZAMKNIĘTE"),
-        ("180", "OSÓB ZASIADANYCH PRZY STOŁACH PODŁUŻNYCH"),
-        ("180", "OSÓB ZASIADANYCH PRZY STOŁACH OKRĄGŁYCH"),
+        ("DO 180", "OSÓB PRZY STOŁACH OKRĄGŁYCH LUB PODŁUŻNYCH"),
+        ("DO 300", "OSÓB W FORMULE KOKTAJLOWEJ (STANDING PARTY)"),
     ]
     key_col_w = key_w // 4
     key_values_y = y + 78

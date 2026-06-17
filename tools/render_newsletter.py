@@ -225,7 +225,7 @@ def render() -> Image.Image:
     title_y = y + 840
     draw.text((70, title_y), "Od Scheiblera", font=F["serif_82"], fill=WHITE)
     draw.text((770, title_y), "do", font=F["serif_82"], fill=WHITE)
-    draw.text((866, title_y + 2), "POLMO", font=F["serif_italic_112"], fill=COPPER_LIGHT)
+    draw.text((866, title_y), "POLMO", font=F["serif_82"], fill=WHITE)
     hero_eyebrow = "DWIE NOWE PRZESTRZENIE EVENTOWE W ŁODZI"
     hero_spacing = 6
     hero_font = F["sans_bold_28"]

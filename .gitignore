@@ -12,6 +12,10 @@ Desktop.ini
 *.temp
 work/
 
+# Python
+__pycache__/
+*.py[cod]
+
 # Environment
 .env
 .env.*

@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Od Scheiblera do POLMO | CFI Hotels Group</title>
+  <style>
+    :root {
+      --ink: #171612;
+      --charcoal: #24211d;
+      --chocolate: #301d0d;
+      --wood: #6d543b;
+      --wood-gradient: linear-gradient(115deg, #1b1008 0%, var(--chocolate) 52%, var(--wood) 100%);
+      --paper: #f1eadf;
+      --paper-deep: #e5d7c4;
+      --copper: #ad6f45;
+      --copper-light: #d4a47f;
+      --sage: #76786a;
+      --white: #fffdf8;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: #d9d4cc; }
+    body {
+      margin: 0;
+      background: #d9d4cc;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .email {
+      width: 720px;
+      margin: 0 auto;
+      background: var(--paper);
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(38, 31, 24, .22);
+    }
+    .eyebrow {
+      font-size: 11px;
+      line-height: 1.2;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+    .topbar {
+      height: 72px;
+      padding: 0 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--paper);
+      background: var(--wood-gradient);
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: .16em;
+      font-weight: 700;
+    }
+    .topbar-badge {
+      margin-left: auto;
+      margin-right: 28px;
+      padding: 7px 13px 6px;
+      border-radius: 999px;
+      background: var(--copper-light);
+      color: var(--ink);
+      font-size: 9px;
+      line-height: 1;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .topbar .eyebrow { color: var(--copper-light); }
+
+    .hero {
+      min-height: 650px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      color: var(--white);
+      background: var(--wood-gradient);
+      isolation: isolate;
+    }
+    .hero-images {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .hero-images img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-images img:first-child { object-position: 48% 50%; }
+    .hero-images img:last-child { object-position: 50% 52%; }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(18, 16, 13, .25), rgba(18, 16, 13, .05)),
+        linear-gradient(0deg, rgba(18, 16, 13, .98) 0%, rgba(18, 16, 13, .72) 36%, rgba(18, 16, 13, .10) 72%);
+    }
+    .hero-rule {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+      background: rgba(255,255,255,.38);
+    }
+    .hero-copy { width: 100%; padding: 0 48px 54px; }
+    .hero .eyebrow {
+      display: inline-block;
+      margin-top: 28px;
+      margin-bottom: 0;
+      padding: 12px 18px 11px;
+      color: var(--copper-light);
+      font-size: 14px;
+      letter-spacing: .24em;
+      background: rgba(31, 18, 9, .82);
+      border: 1px solid rgba(212, 164, 127, .45);
+      border-radius: 2px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .22);
+    }
+    h1 {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      font-size: 51px;
+      line-height: .93;
+      letter-spacing: -.04em;
+      font-weight: 400;
+    }
+    h1 .scheibler { text-align: left; white-space: nowrap; }
+    h1 .polmo { text-align: left; white-space: nowrap; }
+    h1 em { color: inherit; font-style: normal; }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 42px;
+      padding: 70px 48px 78px;
+    }
+    .intro-kicker {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 29px;
+      line-height: 1.05;
+      color: var(--copper);
+    }
+    .intro-copy p {
+      margin: 0 0 18px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .intro-copy p:last-child { margin-bottom: 0; }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      min-height: 230px;
+      margin-top: -24px;
+      position: relative;
+      z-index: 1;
+      color: var(--paper);
+      background: var(--wood-gradient);
+    }
+    .timeline-item {
+      padding: 28px 42px 22px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .timeline-item + .timeline-item { border-left: 1px solid rgba(213,173,130,.36); }
+    .timeline-number {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 40px;
+      padding-top: 34px;
+      color: #d5ad82;
+    }
+    .timeline-years { min-width: 76px; text-align: center; }
+    .timeline-years .timeline-number { padding-top: 34px; }
+    .timeline-content { flex: 1; }
+    .timeline-label { color: rgba(255,253,248,.88); font-size: 14px; line-height: 1.5; }
+    .timeline-label strong { color: var(--white); font-size: 15px; }
+    .timeline-highlight {
+      margin: 10px 0 0;
+      color: #d5ad82;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .timeline-highlight--primary { font-size: 13px; line-height: 1.45; }
+    .timeline-present {
+      margin-top: 172px;
+      color: #d5ad82;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1;
+      text-align: center;
+    }
+    .timeline-logo {
+      display: block;
+      height: 88px;
+      width: auto;
+      margin-top: 14px;
+      filter: drop-shadow(0 2px 5px rgba(0,0,0,.3));
+    }
+    .timeline-logo--centered { margin-left: auto; margin-right: auto; }
+    .tektura-link { color: inherit; text-decoration: none; }
+    .tektura-link:hover { opacity: .82; }
+
+    .venue { padding: 76px 48px 82px; }
+    .venue--99 { background: var(--paper); }
+    .venue--tektura { color: var(--paper); background: var(--wood-gradient); }
+    .venue-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; }
+    .venue-index {
+      min-width: 84px;
+      height: 84px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      color: var(--copper);
+    }
+    .venue--tektura .venue-index { color: var(--copper-light); }
+    .venue-heading-copy { flex: 1; }
+    .venue-heading .eyebrow { color: var(--copper); margin-bottom: 13px; }
+    .venue--tektura .venue-heading .eyebrow { color: var(--copper-light); }
+    h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 50px;
+      line-height: 1;
+      letter-spacing: -.035em;
+      font-weight: 400;
+    }
+    .venue-subtitle {
+      margin: 14px 0 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-size: 22px;
+      line-height: 1.25;
+      color: var(--copper);
+    }
+    .venue--tektura .venue-subtitle { color: var(--copper-light); }
+
+    .feature-image {
+      width: calc(100% + 96px);
+      height: 390px;
+      margin: 48px -48px 42px;
+      object-fit: cover;
+    }
+    .venue--99 .feature-image { object-position: center 42%; }
+    .venue--tektura .feature-image { height: 405px; object-position: center; }
+    .venue-copy {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
+    .venue-copy p { margin: 0 0 18px; font-size: 15px; line-height: 1.7; }
+    .venue-copy p:last-child { margin-bottom: 0; }
+    .venue--tektura .venue-copy p { color: rgba(255,255,255,.82); }
+    .lead { font-family: Georgia, "Times New Roman", serif; font-size: 19px !important; line-height: 1.55 !important; }
+
+    .history-card {
+      margin-top: 46px;
+      display: grid;
+      grid-template-columns: 42% 58%;
+      color: var(--paper);
+      background: var(--wood-gradient);
+    }
+    .history-card img { width: 100%; height: 100%; min-height: 390px; object-fit: cover; filter: sepia(.16); }
+    .history-content { padding: 38px 34px 34px; }
+    .history-content .eyebrow { color: var(--copper-light); }
+    .history-content h3 {
+      margin: 12px 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1.1;
+      font-weight: 400;
+    }
+    .history-intro { margin: 0; color: rgba(255,255,255,.73); font-size: 13px; line-height: 1.55; }
+    .history-dates { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; margin-top: 26px; }
+    .history-date { padding-top: 13px; border-top: 1px solid rgba(255,255,255,.18); }
+    .history-date strong { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: 400; color: var(--copper-light); }
+    .history-date span { display: block; margin-top: 5px; font-size: 11px; line-height: 1.4; color: rgba(255,255,255,.76); }
+    .archive-caption { margin-top: 20px; font-size: 9px; line-height: 1.4; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+    .history-card--scheibler {
+      overflow: hidden;
+      color: var(--ink);
+      background: linear-gradient(135deg, #ead7bd 0%, #f4eadc 100%);
+      border: 1px solid rgba(173,111,69,.34);
+      box-shadow: 0 16px 38px rgba(18,10,5,.18);
+    }
+    .history-card--scheibler > img {
+      filter: sepia(.78) saturate(.82) contrast(.94) brightness(1.06);
+      border-right: 5px solid var(--copper);
+    }
+    .history-card--scheibler .history-content .eyebrow { color: var(--copper); }
+    .history-card--scheibler .history-intro { color: rgba(23,22,18,.72); }
+    .history-card--scheibler .history-dates { gap: 14px; }
+    .history-card--scheibler .history-date {
+      min-height: 118px;
+      padding: 13px 14px 13px 17px;
+      border: 0;
+      border-left: 3px solid var(--copper);
+      background: rgba(255,253,248,.48);
+    }
+    .history-card--scheibler .history-date strong { color: var(--copper); }
+    .history-card--scheibler .history-date span { color: rgba(23,22,18,.75); line-height: 1.45; }
+    .history-card--scheibler .archive-caption { color: rgba(23,22,18,.48); }
+
+    .tektura-key-card {
+      margin-top: 44px;
+      padding: 24px 18px 22px;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    .tektura-key-card .eyebrow { margin-bottom: 18px; color: var(--copper); text-align: center; }
+    .tektura-key-values { display: grid; grid-template-columns: repeat(4, 1fr); padding: 18px 0 20px; border-top: 1px solid rgba(23,22,18,.25); border-bottom: 1px solid rgba(23,22,18,.25); }
+    .tektura-key-value { padding: 0 14px; text-align: center; }
+    .tektura-key-value + .tektura-key-value { border-left: 1px solid rgba(23,22,18,.18); }
+    .tektura-key-value strong { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 27px; font-weight: 400; color: var(--copper); }
+    .tektura-key-value span { display: block; margin-top: 7px; font-size: 9px; line-height: 1.45; letter-spacing: .06em; text-transform: uppercase; }
+    .tektura-key-amenities { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 18px; }
+    .tektura-key-amenity { position: relative; padding-left: 14px; font-size: 10px; line-height: 1.4; text-align: center; }
+    .tektura-key-amenity::before { content: ""; position: absolute; left: 2px; top: .48em; width: 5px; height: 5px; border-radius: 50%; background: var(--copper); }
+    .tektura-footer-collage {
+      display: block;
+      width: calc(100% + 96px);
+      height: auto;
+      margin-top: 58px;
+      margin-left: -48px;
+      margin-right: -48px;
+    }
+
+    .arrangements { margin-top: 42px; padding-top: 25px; border-top: 1px solid rgba(23,22,18,.18); }
+    .arrangements-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-bottom: 14px; }
+    .arrangements-heading h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 25px; line-height: 1.1; font-weight: 400; }
+    .arrangements-note { max-width: 270px; margin: 0; text-align: right; font-size: 9px; line-height: 1.4; color: rgba(23,22,18,.52); }
+    .arrangement-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .arrangement-card { overflow: hidden; padding-top: 8px; border-top: 2px solid var(--copper-light); }
+    .arrangement-card img { display: block; width: 100%; height: 115px; object-fit: cover; object-position: center; transform: scale(1.18); background: white; }
+    .arrangement-meta { display: flex; justify-content: center; align-items: baseline; gap: 8px; padding: 8px 8px 0; text-align: center; }
+    .arrangement-meta strong { font-family: Georgia, "Times New Roman", serif; font-size: 13px; font-weight: 400; }
+    .arrangement-meta span { color: var(--copper); font-family: Georgia, "Times New Roman", serif; font-size: 15px; }
+    .arrangement-card small { display: none; }
+
+    .hz-capacities {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 36px;
+      border-top: 1px solid rgba(23,22,18,.25);
+      border-bottom: 1px solid rgba(23,22,18,.25);
+    }
+    .hz-capacity { padding: 20px 18px; text-align: center; }
+    .hz-capacity + .hz-capacity { border-left: 1px solid rgba(23,22,18,.18); }
+    .hz-capacity strong { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-weight: 400; color: var(--copper); }
+    .hz-capacity span { display: block; margin-top: 7px; font-size: 9px; line-height: 1.4; letter-spacing: .07em; text-transform: uppercase; }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 42px;
+      border-top: 1px solid rgba(23,22,18,.25);
+      border-bottom: 1px solid rgba(23,22,18,.25);
+    }
+    .venue--tektura .facts { border-color: rgba(255,255,255,.18); }
+    .fact { padding: 20px 18px 20px 0; }
+    .fact + .fact { padding-left: 18px; border-left: 1px solid rgba(23,22,18,.18); }
+    .venue--tektura .fact + .fact { border-color: rgba(255,255,255,.18); }
+    .fact strong { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: 400; color: var(--copper); }
+    .fact-icon { margin-left: 7px; font-family: Arial, sans-serif; font-size: .75em; vertical-align: .08em; }
+    .venue--tektura .fact strong { color: var(--copper-light); }
+    .fact span { display: block; margin-top: 5px; font-size: 10px; line-height: 1.35; letter-spacing: .12em; text-transform: uppercase; }
+
+    .quote {
+      position: relative;
+      padding: 82px 70px 88px;
+      text-align: center;
+      color: var(--ink);
+      background: var(--paper-deep);
+    }
+    .quote p {
+      margin: 0 auto;
+      max-width: 590px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 37px;
+      line-height: 1.2;
+      letter-spacing: -.025em;
+    }
+    .quote .eyebrow { margin-top: 26px; color: var(--copper); }
+    .tektura-details {
+      margin: 50px auto 0;
+      padding-top: 34px;
+      max-width: 620px;
+      border-top: 1px solid rgba(23,22,18,.20);
+      text-align: left;
+    }
+    .tektura-details-title { text-align: center; color: var(--copper); }
+    .capacity-row { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 24px; }
+    .capacity-item { padding: 0 20px; text-align: center; }
+    .capacity-item + .capacity-item { border-left: 1px solid rgba(23,22,18,.18); }
+    .capacity-item strong { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 32px; font-weight: 400; color: var(--copper); }
+    .capacity-item span { display: block; margin-top: 5px; font-size: 10px; line-height: 1.4; letter-spacing: .07em; text-transform: uppercase; }
+    .amenities { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; margin-top: 30px; padding-top: 26px; border-top: 1px solid rgba(23,22,18,.15); }
+    .amenity { position: relative; padding-left: 17px; font-size: 12px; line-height: 1.45; }
+    .amenity::before { content: ""; position: absolute; left: 0; top: .52em; width: 6px; height: 6px; border-radius: 50%; background: var(--copper); }
+
+    .footer {
+      padding: 40px 48px 44px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: rgba(255,255,255,.78);
+      background: var(--wood-gradient);
+    }
+    .footer-brand { color: var(--white); font-size: 17px; letter-spacing: .15em; font-weight: 700; }
+    .footer-note { margin-top: 9px; font-family: Georgia, serif; font-style: italic; color: var(--copper-light); }
+    .footer .eyebrow { text-align: right; line-height: 1.65; }
+
+    @media (max-width: 720px) {
+      .email { width: 100%; }
+      .topbar { padding: 0 24px; }
+      .topbar-badge { margin-right: 12px; padding: 6px 9px 5px; font-size: 8px; }
+      .hero { min-height: 610px; }
+      .hero-copy { padding: 0 26px 38px; }
+      h1 { gap: 22px; font-size: 34px; }
+      .intro { grid-template-columns: 1fr; padding: 50px 26px; gap: 24px; }
+      .timeline { margin-top: -16px; }
+      .timeline-item { padding: 22px 26px; display: block; }
+      .timeline-label { margin-top: 7px; }
+      .timeline-number { padding-top: 0; }
+      .timeline-years { text-align: left; }
+      .timeline-years .timeline-number { padding-top: 0; }
+      .timeline-logo { height: 68px; }
+      .timeline-present { font-size: 27px; }
+      .venue { padding: 56px 26px 62px; }
+      .venue-heading { display: block; }
+      .venue-index { margin-bottom: 26px; }
+      h2 { font-size: 42px; }
+      .feature-image { width: calc(100% + 52px); margin-left: -26px; margin-right: -26px; height: 320px; }
+      .venue-copy { grid-template-columns: 1fr; gap: 18px; }
+      .history-card { grid-template-columns: 1fr; }
+      .history-card img { min-height: 260px; }
+      .history-card--scheibler > img { border-right: 0; border-bottom: 5px solid var(--copper); }
+      .history-dates { grid-template-columns: 1fr; }
+      .tektura-key-values, .tektura-key-amenities { grid-template-columns: 1fr 1fr; }
+      .tektura-key-value:nth-child(3) { border-left: 0; }
+      .tektura-footer-collage {
+        width: calc(100% + 52px);
+        height: auto;
+        margin-left: -26px;
+        margin-right: -26px;
+      }
+      .arrangements-heading { display: block; }
+      .arrangements-note { margin-top: 12px; text-align: left; }
+      .arrangement-grid { grid-template-columns: 1fr; }
+      .hz-capacities { grid-template-columns: 1fr 1fr; }
+      .hz-capacity:nth-child(3) { border-left: 0; border-top: 1px solid rgba(23,22,18,.18); }
+      .hz-capacity:nth-child(4) { border-top: 1px solid rgba(23,22,18,.18); }
+      .facts { grid-template-columns: 1fr; }
+      .fact + .fact { padding-left: 0; border-left: 0; border-top: 1px solid rgba(23,22,18,.18); }
+      .quote { padding: 70px 28px; }
+      .quote p { font-size: 31px; }
+      .capacity-row { grid-template-columns: 1fr; }
+      .capacity-item { padding: 13px 0; }
+      .capacity-item + .capacity-item { border-left: 0; border-top: 1px solid rgba(23,22,18,.15); }
+      .amenities { grid-template-columns: 1fr; }
+      .footer { display: block; }
+      .footer .eyebrow { margin-top: 30px; text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main class="email">
+    <header class="topbar">
+      <div class="brand">CFI HOTELS GROUP</div>
+      <div class="topbar-badge">Nowość</div>
+      <div class="eyebrow">Łódź / MICE</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-images">
+        <img src="assets/tektura-hero-window.jpg" alt="Industrialne wnętrze Tektura by Farina Bianco z łukowym oknem">
+        <img src="assets/99hz-hero-banquet-crop.jpg" alt="Sala eventowa 99Hz w ustawieniu bankietowym">
+      </div>
+      <div class="hero-rule"></div>
+      <div class="hero-copy">
+        <h1 class="serif">
+          <span class="scheibler">Od Scheiblera</span>
+          <span class="polmo">do POLMO</span>
+        </h1>
+        <div class="eyebrow">Dwie nowe przestrzenie eventowe w Łodzi</div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-kicker">Łódź.<br>Miasto, które od zawsze tworzyło historię.</div>
+      <div class="intro-copy">
+        <p>W sercu miasta, które przez dziesięciolecia wyznaczało kierunki rozwoju polskiego przemysłu, CFI Hotels Group tworzy dziś miejsca spotkań łączące historię, architekturę i nowoczesną gościnność.</p>
+        <p>Do portfolio grupy dołączyły dwie nowe przestrzenie eventowe, których charakter wyrasta bezpośrednio z dziedzictwa Łodzi.</p>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-years">
+          <div class="timeline-number">1855</div>
+          <div class="timeline-present">2026</div>
+        </div>
+        <div class="timeline-content">
+          <p class="timeline-highlight timeline-highlight--primary">W 1855 roku „król bawełny” Karol Scheibler przy Wodnym Rynku w Łodzi (dzisiejszy plac Zwycięstwa 2) uruchomił własną fabrykę — przędzalnię, która stanowiła początek włókienniczego imperium.</p>
+          <a class="tektura-link" href="https://www.facebook.com/tekturabyfarinabianco/" target="_blank" rel="noopener noreferrer" aria-label="Tektura by Farina Bianco na Facebooku">
+            <img class="timeline-logo timeline-logo--centered" src="assets/tektura-logo-white.png" alt="Tektura by Farina Bianco">
+          </a>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-years">
+          <div class="timeline-number">1908</div>
+          <div class="timeline-present">2026</div>
+        </div>
+        <div class="timeline-content">
+          <p class="timeline-highlight timeline-highlight--primary">Historia łódzkiej Fabryki Osprzętu Samochodowego (FOS) „Polmo” przy ul. Przybyszewskiego 99 sięga 1908 roku. Zakład rozpoczął od produkcji odlewniczej, w 1929 roku wszedł w branżę motoryzacyjną, od 1945 roku działał jako samodzielne przedsiębiorstwo.</p>
+          <a class="tektura-link" href="https://www.facebook.com/sala99Hz/" target="_blank" rel="noopener noreferrer" aria-label="99Hz na Facebooku">
+            <img class="timeline-logo timeline-logo--centered" src="assets/99hz-logo-white.png" alt="99Hz — sala konferencyjno-bankietowa">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="venue venue--99">
+      <div class="venue-heading">
+        <div class="venue-heading-copy">
+          <div class="eyebrow">01 / POLMO / Przybyszewskiego 99</div>
+          <h2>99Hz</h2>
+          <p class="venue-subtitle">Nowoczesny event w miejscu z motoryzacyjną historią</p>
+        </div>
+        <div class="venue-index">01</div>
+      </div>
+
+      <img class="feature-image" src="assets/99hz-conference.jpg" alt="Wnętrze sali konferencyjno-eventowej 99Hz">
+
+      <div class="venue-copy">
+        <div>
+          <p class="lead">99Hz to elegancka przestrzeń konferencyjno-eventowa zlokalizowana w budynku Citi Hotel's Łódź, przy ul. Przybyszewskiego 99.</p>
+          <p>Miejsce powstało na terenie dawnych zakładów motoryzacyjnych POLMO, będących przez lata ważnym elementem przemysłowej historii miasta.</p>
+        </div>
+        <div>
+          <p>Inspirację tym dziedzictwem odnaleźć można we wnętrzu obiektu, gdzie charakterystyczne metalowe elementy dekoracyjne nawiązują do motoryzacyjnej przeszłości tej lokalizacji.</p>
+          <p>Nowoczesna architektura, profesjonalne wyposażenie multimedialne oraz bezpośredni dostęp do 114 pokoi Citi Hotel's Łódź tworzą kompleksowe rozwiązanie dla organizatorów konferencji, szkoleń, gal, bankietów i&nbsp;wydarzeń firmowych.</p>
+          <p>To przestrzeń stworzona dla tych, którzy oczekują czegoś więcej niż standardowej sali konferencyjnej.</p>
+        </div>
+      </div>
+
+      <div class="hz-capacities">
+        <div class="hz-capacity"><strong>145 m²</strong><span>powierzchnia sali</span></div>
+        <div class="hz-capacity"><strong>do 120</strong><span>osób przy stołach prostokątnych</span></div>
+        <div class="hz-capacity"><strong>do 80</strong><span>osób przy stołach okrągłych</span></div>
+        <div class="hz-capacity"><strong>do 150</strong><span>osób w formule koktajlowej (standing party)</span></div>
+      </div>
+
+      <div class="history-card">
+        <img src="assets/polmo-archive-hall.jpg" alt="Archiwalna hala montażu gaźników i pomp POLMO">
+        <div class="history-content">
+          <div class="eyebrow">Rys historyczny / POLMO</div>
+          <h3>Od odlewni do motoryzacyjnej specjalizacji</h3>
+          <p class="history-intro">FOS „POLMO” powstało na bazie ośmiu łódzkich zakładów. Ich doświadczenie połączyło odlewnictwo, konstrukcję silników oraz produkcję osprzętu dla polskiej motoryzacji.</p>
+          <div class="history-dates">
+            <div class="history-date"><strong>1908</strong><span>Powstaje Odlewnia Żelaza „Ferrum” — od tej daty zakład liczył swoją historię.</span></div>
+            <div class="history-date"><strong>1929</strong><span>Roman Klinger zakłada przy ul. Łąkowej Fabrykę Akcesoriów Samochodowych.</span></div>
+            <div class="history-date"><strong>1952</strong><span>Rozpoczyna się produkcja gaźników, jednej z najważniejszych specjalizacji zakładu.</span></div>
+            <div class="history-date"><strong>1968</strong><span>Zakład przyjmuje nazwę Fabryka Osprzętu Samochodowego „POLMO”.</span></div>
+          </div>
+          <div class="archive-caption">Archiwalna hala montażu gaźników i pomp · Informator FOS „POLMO”, Łódź 1978</div>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact"><strong>114</strong><span>pokoi w Citi Hotel's Łódź</span></div>
+        <div class="fact"><strong>MICE</strong><span>konferencje, szkolenia i gale</span></div>
+        <div class="fact"><strong>AV <span class="fact-icon" aria-hidden="true">❄</span></strong><span>profesjonalne multimedia<br>klimatyzacja</span></div>
+      </div>
+    </section>
+
+    <section class="venue venue--tektura">
+      <div class="venue-heading">
+        <div class="venue-heading-copy">
+          <div class="eyebrow">02 / Centrala Scheiblera / Plac Zwycięstwa 2</div>
+          <h2><a class="tektura-link" href="https://www.facebook.com/tekturabyfarinabianco/" target="_blank" rel="noopener noreferrer">Tektura<br><span style="font-size:.58em;font-style:italic;color:var(--copper-light)">by Farina Bianco</span></a></h2>
+          <p class="venue-subtitle">Industrialna elegancja w historycznej Centrali Scheiblera</p>
+        </div>
+        <div class="venue-index">02</div>
+      </div>
+
+      <img class="feature-image" src="assets/tektura-collage.jpg" alt="Kolaż zdjęć industrialnego wnętrza sali Tektura by Farina Bianco">
+
+      <div class="venue-copy">
+        <div>
+          <p class="lead">Przy Placu Zwycięstwa 2 znajduje się jedno z najbardziej wyjątkowych miejsc na mapie Łodzi.</p>
+          <p>Tektura by Farina Bianco mieści się w zabytkowym kompleksie dawnej fabryki Karola Scheiblera, znanym jako „Centrala”.</p>
+        </div>
+        <div>
+          <p>Powstały w latach 1855-1870 obiekt należy do najważniejszych zabytków przemysłowych miasta i&nbsp;jest symbolem łódzkiej przedsiębiorczości oraz przemysłowego rozwoju.</p>
+          <p>Dziś odrestaurowane wnętrza zachwycają autentyczną cegłą, monumentalnymi przeszkleniami i&nbsp;niepowtarzalnym klimatem, tworząc idealne tło dla gal, premier produktów, konferencji, bankietów i&nbsp;wydarzeń prywatnych.</p>
+        </div>
+      </div>
+
+      <div class="tektura-key-card">
+        <div class="eyebrow">Kluczowe informacje i atuty</div>
+        <div class="tektura-key-values">
+          <div class="tektura-key-value"><strong>600 m²</strong><span>powierzchnia przestrzeni</span></div>
+          <div class="tektura-key-value"><strong>od 40</strong><span>osób · imprezy zamknięte</span></div>
+          <div class="tektura-key-value"><strong>do 180</strong><span>osób przy stołach okrągłych lub podłużnych</span></div>
+          <div class="tektura-key-value"><strong>do 300</strong><span>osób w formule koktajlowej (standing party)</span></div>
+        </div>
+        <div class="tektura-key-amenities">
+          <div class="tektura-key-amenity">Sąsiedztwo parku</div>
+          <div class="tektura-key-amenity">Dyskretne wejście VIP</div>
+          <div class="tektura-key-amenity">Wewnętrzne patio</div>
+          <div class="tektura-key-amenity">Przestrzeń na parkiet</div>
+        </div>
+      </div>
+
+      <div class="history-card history-card--scheibler">
+        <img src="assets/scheibler-archive.jpg" alt="Brama wejściowa do zakładów Scheiblera i Grohmana w latach 1936-1938">
+        <div class="history-content">
+          <div class="eyebrow">Rys historyczny / Centrala Scheiblera</div>
+          <h3>Miejsce, od którego zaczęło się przemysłowe imperium</h3>
+          <p class="history-intro">Centrala Scheiblera przy Placu Zwycięstwa 2 to najstarszy kompleks dawnej fabryki bawełny Karola Scheiblera. Dała początek jednemu z największych imperiów przemysłowych XIX-wiecznej Europy i pozostaje kluczowym zabytkiem Łodzi.</p>
+          <div class="history-dates">
+            <div class="history-date"><strong>1855</strong><span>Karol Scheibler rozpoczyna działalność przemysłową w Łodzi.</span></div>
+            <div class="history-date"><strong>1858</strong><span>Powstaje najstarsza część kompleksu znanego jako „Centrala”.</span></div>
+            <div class="history-date"><strong>XIX w.</strong><span>Kompleks staje się początkiem jednego z największych imperiów przemysłowych Europy.</span></div>
+            <div class="history-date"><strong>Dziś</strong><span>Tektura by Farina Bianco · Plac Zwycięstwa 2.</span></div>
+          </div>
+          <div class="archive-caption">Brama wejściowa do przędzalni i tkalni · lata 1936-1938 · Archiwum Państwowe w Łodzi / Fotopolska.eu</div>
+        </div>
+      </div>
+
+      <img class="tektura-footer-collage" src="assets/tektura-footer-collage.jpg" alt="Kolaż detali i patio Tektura by Farina Bianco">
+
+    </section>
+
+    <footer class="footer">
+      <div>
+        <div class="footer-brand">CFI HOTELS GROUP</div>
+        <div class="footer-note">Historia nie stanowi dekoracji.<br>Jest częścią każdego wydarzenia.</div>
+      </div>
+      <div class="eyebrow">Łódź<br>Nowe przestrzenie eventowe</div>
+    </footer>
+  </main>
+</body>
+</html>
